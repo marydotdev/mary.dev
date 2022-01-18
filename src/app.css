@@ -1,3 +1,7 @@
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+
 @tailwind base;
 
 @layer utilities {
@@ -38,3 +42,67 @@ svg {
 
 @tailwind components;
 @tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-wrap: break-word;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 11%, 1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsla(0, 0%, 96%, 0.8);
+  border-radius: 100vw;
+  border: 2px solid hsla(0, 0%, 11%, 1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsla(0, 0%, 96%, 1);
+}
