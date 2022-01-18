@@ -12,7 +12,7 @@
 
 <script>
   import ButtonLink from '$lib/components/ButtonLink.svelte'
-  import PostPreview from '$lib/components/PostPreview.svelte'
+  import PostCard from '$lib/components/PostCard.svelte'
   import Matter from '$lib/components/Matter.svelte'
   import { name } from '$lib/info.js'
 
@@ -35,9 +35,7 @@
     </h2>
     <div class="grid gap-4 grid-cols-1 sm:grid-cols-2">
       {#each recentPosts as post}
-        <div class="p-4 border-2 border-zinc-300 dark:border-zinc-700 rounded-lg">
-          <PostPreview {post} small />
-        </div>
+          <PostCard {post} small />
       {/each}
     </div>
   </div>

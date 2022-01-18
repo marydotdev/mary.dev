@@ -40,8 +40,8 @@
               </a>  
             </Tooltip>
   
-            <Tooltip title="Work">
-              <a href="/work" class="hidden sm:block hover:transform hover:scale-110 transition ease-out duration-300">
+            <Tooltip title="Projects">
+              <a href="/projects" class="hidden sm:block hover:transform hover:scale-110 transition ease-out duration-300">
               <div class="hidden sm:block bg-light dark:bg-dark p-2 rounded-lg">
                 <ZapIcon size="2x" />
               </div>

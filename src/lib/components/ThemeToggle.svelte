@@ -12,7 +12,7 @@
           role="switch"
           aria-label="Toggle Dark Mode"
           aria-checked={!prefersLight}
-          class="flex justify-center items-center w-6 h-6"
+          class="flex justify-center items-center w-6 h-6 sm:w-12 sm:h-12"
           on:click={() => {
             prefersLight = !prefersLight
             localStorage.setItem('prefersLight', prefersLight.toString())
@@ -25,9 +25,9 @@
           }}
         >
           {#if prefersLight}
-            <MoonIcon size="1.5x" />
+            <MoonIcon size="2x" />
           {:else}
-            <SunIcon size="1.5x" />
+            <SunIcon size="2x" />
           {/if}
         </button>
       {/if}

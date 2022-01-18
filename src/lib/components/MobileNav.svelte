@@ -93,11 +93,11 @@
 				on:click={() => setTimeout(() => isOpen = false, 200)} 
 				in:fly="{{delay: 200, duration: 300, x: 0, y: -300, opacity: 0, easing: quintIn}}"
 				out:fly="{{delay: 400, duration: 300, x: 0, y: -300, opacity: 0, easing: quintIn}}"
-				href="/work">
+				href="/projects">
 				<div class="p-2 border-2 rounded-lg border-zinc-700 dark:border-zinc-100">
 					<ZapIcon size="1.5x" />
 				</div>
-					<span class="text-3xl">Work</span>
+					<span class="text-3xl">Projects</span>
 				</a>
 			</li>
 

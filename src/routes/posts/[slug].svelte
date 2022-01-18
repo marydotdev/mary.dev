@@ -35,9 +35,8 @@
   import { page } from '$app/stores'
   import ButtonLink from '$lib/components/ButtonLink.svelte'
   import { name, website } from '$lib/info'
-  import ToC from '$lib/components/ToC.svelte'
-  import PostPreview from '$lib/components/PostPreview.svelte'
   import ArrowLeftIcon from '$lib/components/ArrowLeftIcon.svelte'
+  import PostCard from '$lib/components/PostCard.svelte';
 
   export let component
 
@@ -80,8 +79,8 @@
 </svelte:head>
 
 <div class="max-w-4xl mx-auto">
-<div class="prose prose-slate prose-sm sm:prose sm:prose-slate sm:prose-lg sm:max-w-none dark:prose-invert">
-<article class="relative">
+<div class="prose prose-zinc prose-md sm:prose sm:prose-zinc sm:prose-lg sm:max-w-none dark:prose-invert">
+<article class="relative max-w-2xl mx-auto">
   <h1 class="!mt-0 !mb-2">
     <a class="!font-medium" href={$page.url.pathname}>
       {title}
@@ -96,18 +95,20 @@
   <div class="relative">
     <!-- render the post -->
     <svelte:component this={component} />
+    
+    <!-- Table of Contents, need to adjust for max-w-4xl
 
-    <!-- table of contents -->
     <div class="hidden xl:block absolute not-prose left-[100%]" aria-label="Table of Contents">
       <div class="fixed z-10 px-4 py-2 ml-8 top-[4.5rem]">
-        <!-- ignore h1 tags as they should only be used for the post title -->
+  
         <ToC allowedHeadings={['h2', 'h3', 'h4', 'h5', 'h6']} />
       </div>
     </div>
+  -->
   </div>
 </article>
 
-<div class="pt-12 flex justify-between">
+<div class="pt-12 flex justify-between hover:transform hover:scale-105 transition ease-out duration-500">
   <ButtonLink href={`/posts`}>
     <slot slot="icon-start">
       <ArrowLeftIcon class="h-5 w-5" />
@@ -125,7 +126,7 @@
       <div class="flex flex-col">
         <h6 class="not-prose post-preview-label">Previous Post</h6>
         <div class="flex-1 post-preview">
-          <PostPreview post={previous} small />
+          <PostCard post={previous} small />
         </div>
       </div>
     {:else}
@@ -135,7 +136,7 @@
       <div class="flex flex-col">
         <h6 class="not-prose post-preview-label flex justify-end">Next Post</h6>
         <div class="flex-1 post-preview">
-          <PostPreview post={next} small />
+          <PostCard post={next} small />
         </div>
       </div>
     {/if}
@@ -145,16 +146,8 @@
 </div>
 
 <style lang="postcss">
-  .post-preview {
-    @apply flex p-4 border border-zinc-300 rounded-lg;
-  }
-
   .post-preview-label {
     @apply mb-2 text-zinc-500 uppercase text-base font-medium;
-  }
-
-  :global(.dark) .post-preview {
-    @apply border-zinc-700;
   }
 
   :global(.dark) .post-preview-label {

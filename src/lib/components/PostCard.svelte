@@ -6,7 +6,8 @@
   export let small = false
 </script>
 
-<div class="font-display flex flex-col p-4 rounded-lg hover:transform hover:scale-105 transition ease-out duration-500">
+<div class="p-2 rounded-xl bg-zinc-200 dark:bg-zinc-700 hover:transform hover:scale-105 transition ease-out duration-500">
+<div class="font-display flex flex-col p-4 rounded-lg bg-zinc-100 dark:bg-zinc-800">
   <div>
     {#if !small}
       <h1 class="!mt-0 !mb-2">
@@ -29,4 +30,5 @@
       <ButtonLink href={`/posts/${post.slug}`}>Read More</ButtonLink>
     </div>
   </slot>
+</div>
 </div>
