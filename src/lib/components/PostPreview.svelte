@@ -6,7 +6,7 @@
   export let small = false
 </script>
 
-<div class="font-display flex flex-col p-4 rounded-lg hover:transform hover:scale-105 transition ease-out duration-500">
+<div class="font-display flex flex-col p-4 rounded-lg sm:hover:transform sm:hover:scale-105 transition ease-out duration-500">
   <div>
     {#if !small}
       <h1 class="!mt-0 !mb-2">

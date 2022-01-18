@@ -1,6 +1,11 @@
 <script>
     import Jam from "$lib/components/Jam.svelte";
+    import { name } from '$lib/info.js'
 </script>
+
+<svelte:head>
+  <title>{name} | 😎</title>
+</svelte:head>
 
 <section class="mx-auto flex justify-center">
     <div class="max-w-4xl w-full flex flex-col justify-center gap-4 font-display">

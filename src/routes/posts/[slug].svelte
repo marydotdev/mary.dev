@@ -108,8 +108,8 @@
   </div>
 </article>
 
-<div class="pt-12 flex justify-between hover:transform hover:scale-105 transition ease-out duration-500">
-  <ButtonLink href={`/posts`}>
+<div class="pt-12 flex justify-between">
+  <ButtonLink href={`/posts`} class="sm:hover:transform sm:hover:scale-105 transition ease-out duration-500">
     <slot slot="icon-start">
       <ArrowLeftIcon class="h-5 w-5" />
     </slot>
