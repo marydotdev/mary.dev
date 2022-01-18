@@ -4,6 +4,14 @@ module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts,md,svx}'],
   theme: {
     extend: {
+      colors: {
+        dark: '#1D1D1D',
+        light: '#F6F6F6',
+      },
+      fontFamily: {
+        'display': ['Rubik'],
+        'mono': ['Fira Mono'],
+      },
       typography: ({ theme }) => {
         return {
           DEFAULT: {

@@ -60,14 +60,14 @@
 
 <svelte:window on:scroll={setActiveHeading} />
 
-<h6 id="__sections" class="uppercase text-slate-400/75 dark:text-slate-600 font-bold text-sm">
+<h6 id="__sections" class="mt-8 uppercase text-zinc-400/75 dark:text-zinc-600 font-bold text-sm">
   Sections
 </h6>
 
 <ul class="mt-2 !pl-0">
   {#each headings as heading}
     <li
-      class="heading list-none my-2 !pl-0 text-base text-slate-400 hover:text-slate-900 dark:text-slate-500 hover:dark:text-slate-100 transition-colors"
+      class="heading list-none my-2 !pl-0 text-base text-zinc-400 hover:text-zinc-900 dark:text-zinc-500 hover:dark:text-zinc-100 transition-colors"
       class:active={activeHeading?.node === heading.node}
       style={`--depth: ${heading.depth}`}
     >
@@ -82,11 +82,11 @@
   }
 
   .active {
-    @apply text-slate-900 font-medium;
+    @apply text-zinc-900 font-medium;
   }
 
   /* can't use dark: modifier in @apply */
   :global(.dark) .active {
-    @apply text-slate-100;
+    @apply text-zinc-100;
   }
 </style>

@@ -23,20 +23,22 @@
   <title>{name}</title>
 </svelte:head>
 
-<div class="flex flex-col flex-grow">
-  <!-- replace with a bio about you, or something -->
+
+<div class="max-w-4xl mx-auto">
   <Matter />
 
-  <!-- recent posts -->
-  <h2 class="flex items-baseline gap-4 !mb-2">
-    Recent Posts
-    <ButtonLink href="/posts" size="small" raised={false} class="opacity-60">View All</ButtonLink>
-  </h2>
-  <div class="grid gap-4 grid-cols-1 sm:grid-cols-2">
-    {#each recentPosts as post}
-      <div class="flex p-4 border border-slate-300 dark:border-slate-700 rounded-lg">
-        <PostPreview {post} small />
-      </div>
-    {/each}
+  <div class="prose prose-slate prose-sm sm:prose sm:prose-slate sm:prose-lg sm:max-w-none dark:prose-invert">
+    <!-- recent posts -->
+    <h2 class="flex items-baseline gap-4 !mb-2">
+      Recent Posts
+      <ButtonLink href="/posts" size="small" raised={false} class="opacity-60">View All</ButtonLink>
+    </h2>
+    <div class="grid gap-4 grid-cols-1 sm:grid-cols-2">
+      {#each recentPosts as post}
+        <div class="p-4 border-2 border-zinc-300 dark:border-zinc-700 rounded-lg">
+          <PostPreview {post} small />
+        </div>
+      {/each}
+    </div>
   </div>
 </div>

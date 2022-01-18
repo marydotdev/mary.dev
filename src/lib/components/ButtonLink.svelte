@@ -14,7 +14,7 @@
   <a
     {...$$restProps}
     {href}
-    class={'block text-slate-800 dark:text-slate-200 dark:text-opacity-90 rounded-md no-underline ' +
+    class={'block text-zinc-800 dark:text-zinc-200 dark:text-opacity-90 rounded-md no-underline ' +
       className}
     class:small={size === 'small'}
     class:medium={size === 'medium'}
@@ -59,10 +59,10 @@
   }
 
   .raised {
-    @apply bg-slate-300;
+    @apply bg-zinc-300;
   }
 
   :global(.dark) .raised {
-    @apply bg-slate-700;
+    @apply bg-zinc-700;
   }
 </style>

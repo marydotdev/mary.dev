@@ -79,6 +79,8 @@
   <meta name="twitter:image" content={ogImage} />
 </svelte:head>
 
+<div class="max-w-4xl mx-auto">
+<div class="prose prose-slate prose-sm sm:prose sm:prose-slate sm:prose-lg sm:max-w-none dark:prose-invert">
 <article class="relative">
   <h1 class="!mt-0 !mb-2">
     <a class="!font-medium" href={$page.url.pathname}>
@@ -139,21 +141,23 @@
     {/if}
   </div>
 {/if}
+</div>
+</div>
 
 <style lang="postcss">
   .post-preview {
-    @apply flex p-4 border border-slate-300 rounded-lg;
+    @apply flex p-4 border border-zinc-300 rounded-lg;
   }
 
   .post-preview-label {
-    @apply mb-2 text-slate-500 uppercase text-base font-medium;
+    @apply mb-2 text-zinc-500 uppercase text-base font-medium;
   }
 
   :global(.dark) .post-preview {
-    @apply border-slate-700;
+    @apply border-zinc-700;
   }
 
   :global(.dark) .post-preview-label {
-    @apply text-slate-400;
+    @apply text-zinc-400;
   }
 </style>

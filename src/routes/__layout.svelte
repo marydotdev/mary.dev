@@ -17,8 +17,9 @@
   }
 </script>
 
-<div class="flex flex-col min-h-screen">
-  <div class="mx-auto flex flex-col flex-grow w-full max-w-4xl">
+<svelte:window bind:scrollY={y}/>
+<div class="max-w-full h-screen">
+  <div class="flex flex-col bg-light text-dark dark:bg-dark dark:text-light min-h-screen">
    <Header />
 
     <!-- Scroll to Top button START-->
@@ -32,11 +33,10 @@
     {/if}
     <!-- Scroll to Top button END -->
 
-    <main
-      class="prose prose-slate prose-sm sm:prose sm:prose-slate sm:prose-lg sm:max-w-none dark:prose-invert flex flex-col w-full flex-grow py-4 px-4"
-    >
+    <main class="grow px-4">
       <slot />
     </main>
+    
     <Footer />
   </div>
 </div>

@@ -63,8 +63,9 @@
   <title>{name} | Posts</title>
 </svelte:head>
 
-<div class="flex flex-col flex-grow">
-  <div class="flex-grow divide-y divide-slate-300 dark:divide-slate-700">
+<div class="max-w-4xl mx-auto flex flex-col flex-grow">
+  <div class="prose prose-slate prose-sm sm:prose sm:prose-slate sm:prose-lg sm:max-w-none dark:prose-invert">
+  <div class="flex-grow divide-y divide-zinc-300 dark:divide-zinc-700">
     {#each posts as post}
       <div class="py-8 first:pt-0">
         <PostPreview {post} />
@@ -89,5 +90,6 @@
     {#if hasNextPage}
       <ButtonLink raised={false} href={`/posts/page/${page + 1}`}>Next</ButtonLink>
     {/if}
+  </div>
   </div>
 </div>
