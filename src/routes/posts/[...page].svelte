@@ -64,7 +64,7 @@
 </svelte:head>
 
 <div class="max-w-2xl mx-auto flex flex-col flex-grow">
-  <h1 class="text-3xl sm:text-5xl font-display font-semibold tracking-tight pb-4">Blog Posts</h1>
+  <h1 class="text-3xl sm:text-5xl font-display font-regular tracking-tight pb-4">Blog Posts</h1>
       <p class="font-display text-xl text-dark/90 dark:text-light/90 pb-4">
           I write about web development, UI design, and other interesting things I stumble across while surfing the world wide web. Grab the RSS feed <a href="/rss.xml" class="hover:text-black dark:hover:text-white">here</a>.
       </p>

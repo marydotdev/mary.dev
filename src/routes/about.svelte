@@ -1,5 +1,5 @@
 <div class="max-w-2xl mx-auto font-display">
-    <h1 class="text-3xl sm:text-5xl font-semibold tracking-tight pb-4">About Me</h1>
+    <h1 class="text-3xl sm:text-5xl font-regular tracking-tight pb-4">About Me</h1>
 
     <div class="flex flex-col gap-4">
         <p class="text-2xl">My name is Mary and I'm a front-end developer from New York focused on creating fast, responsive web apps.</p>

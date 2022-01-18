@@ -27,12 +27,12 @@
 <div class="max-w-4xl mx-auto">
   <Matter />
 
-  <div class="prose prose-slate prose-sm sm:prose sm:prose-slate sm:prose-lg sm:max-w-none dark:prose-invert">
-    <!-- recent posts -->
-    <h2 class="flex items-baseline gap-4 !mb-2">
+  <!-- recent posts -->
+    <h2 class="font-display font-medium tracking-tight text-2xl md:text-3xl flex items-baseline gap-4 !mb-2">
       Recent Posts
       <ButtonLink href="/posts" size="small" raised={false} class="opacity-60">View All</ButtonLink>
     </h2>
+    <div class="prose prose-zinc prose-md sm:prose sm:prose-zinc sm:prose-lg sm:max-w-none dark:prose-invert">
     <div class="grid gap-4 grid-cols-1 sm:grid-cols-2">
       {#each recentPosts as post}
           <PostCard {post} small />
