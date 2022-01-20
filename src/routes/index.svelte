@@ -11,12 +11,12 @@
 </script>
 
 <script>
-  import ButtonLink from '$lib/components/ButtonLink.svelte'
-  import PostCard from '$lib/components/PostCard.svelte'
+  // import ButtonLink from '$lib/components/ButtonLink.svelte'
+  // import PostCard from '$lib/components/PostCard.svelte'
   import Matter from '$lib/components/Matter.svelte'
   import { name } from '$lib/info.js'
 
-  export let recentPosts
+  // export let recentPosts
 </script>
 
 <svelte:head>
@@ -28,7 +28,7 @@
   <Matter />
 
   <!-- recent posts -->
-    <h2 class="font-display font-medium tracking-tight text-2xl md:text-3xl flex items-baseline gap-4 !mb-2">
+    <!-- <h2 class="pt-12 font-display font-medium tracking-tight text-2xl md:text-3xl flex items-baseline gap-4 !mb-2">
       Recent Posts
       <ButtonLink href="/posts" size="small" raised={false} class="opacity-60">View All</ButtonLink>
     </h2>
@@ -38,5 +38,5 @@
           <PostCard {post} small />
       {/each}
     </div>
-  </div>
+  </div> -->
 </div>

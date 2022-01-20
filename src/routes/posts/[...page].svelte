@@ -46,31 +46,40 @@
 
 <script>
   import ArrowLeftIcon from '$lib/components/ArrowLeftIcon.svelte'
-
   import ButtonLink from '$lib/components/ButtonLink.svelte'
-
   import PostPreview from '$lib/components/PostPreview.svelte'
+  import ItemPreview from '$lib/components/ItemPreview.svelte'
   import { name } from '$lib/info.js'
 
   export let posts
   export let page
+  export let items
 
   $: isFirstPage = page === 1
   $: hasNextPage = posts[posts.length - 1]?.previous
+
+  let search
+  $: items = posts.filter((item) => {
+    if (search) {
+      return item.title.toLowerCase().includes(search.toLowerCase());
+    }
+    return true;
+  });
 </script>
 
 <svelte:head>
   <title>{name} | Posts</title>
 </svelte:head>
 
-<div class="max-w-2xl mx-auto flex flex-col flex-grow">
+<div class="max-w-4xl mx-auto flex flex-col flex-grow">
   <h1 class="text-3xl sm:text-5xl font-display font-regular tracking-tight pb-4">Blog Posts</h1>
       <p class="font-display text-xl text-dark/90 dark:text-light/90 pb-4">
-          I write about web development, UI design, and other interesting things I stumble across while surfing the world wide web. Grab the RSS feed <a href="/rss.xml" class="hover:text-black dark:hover:text-white">here</a>.
+          I write about web development, UI design, and other interesting things I stumble across while surfing the world wide web. Use the search bar below to filter posts by title.
       </p>
 
-      <div class="relative w-full mb-8">
+      <div class="relative w-full sm:w-2/3  mb-8 mx-auto">
           <input
+              bind:value={search}
               aria-label="Search articles"
               type="text"
               placeholder="Search articles"
@@ -88,33 +97,44 @@
               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
       </div>
+
+      <div class="prose prose-zinc prose-md sm:prose sm:prose-zinc sm:prose-lg sm:max-w-none dark:prose-invert">
+        {#if !search}
+        <div class="flex-grow divide-y divide-zinc-300 dark:divide-zinc-700">
+          {#each posts as post}
+            <div class="py-8 first:pt-0">
+              <PostPreview {post} />
+            </div>
+          {/each}
+        </div>
+      {/if}   
+
+      {#if search}
+        <div class="flex-grow divide-y divide-zinc-300 dark:divide-zinc-700">
+          {#each items as item}
+            <div class="py-8 first:pt-0">
+              <ItemPreview {item} />
+            </div>
+          {/each}
+        </div>
+      {/if} 
+        <!-- pagination -->
+        <div class="flex visible items-center justify-between pt-8 opacity-70">
+          {#if !isFirstPage}
+            <ButtonLink raised={false} href={`/posts/page/${page - 1}`}>
+              <slot slot="icon-start">
+                <ArrowLeftIcon class="h-5 w-5" />
+              </slot>
+              Previous
+              <slot slot="icon-end" /></ButtonLink
+            >
+          {:else}
+            <div />
+          {/if}
       
-  <div class="prose prose-zinc prose-md sm:prose sm:prose-zinc sm:prose-lg sm:max-w-none dark:prose-invert">
-  <div class="flex-grow divide-y divide-zinc-300 dark:divide-zinc-700">
-    {#each posts as post}
-      <div class="py-8 first:pt-0">
-        <PostPreview {post} />
-      </div>
-    {/each}
-  </div>
-
-  <!-- pagination -->
-  <div class="flex visible items-center justify-between pt-8 opacity-70">
-    {#if !isFirstPage}
-      <ButtonLink raised={false} href={`/posts/page/${page - 1}`}>
-        <slot slot="icon-start">
-          <ArrowLeftIcon class="h-5 w-5" />
-        </slot>
-        Previous
-        <slot slot="icon-end" /></ButtonLink
-      >
-    {:else}
-      <div />
-    {/if}
-
-    {#if hasNextPage}
-      <ButtonLink raised={false} href={`/posts/page/${page + 1}`}>Next</ButtonLink>
-    {/if}
-  </div>
-  </div>
+          {#if hasNextPage}
+            <ButtonLink raised={false} href={`/posts/page/${page + 1}`}>Next</ButtonLink>
+          {/if}
+        </div>
+        </div>
 </div>
