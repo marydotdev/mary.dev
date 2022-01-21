@@ -15,15 +15,17 @@
             <div class="w-3/4 md:w-1/2">
                 <Jam />
             </div>
-            <div class="w-full md:w-1/2 flex flex-col justify-between">
-                <div class="">
-                    <p class="text-2xl sm:text-3xl py-4">I'm a <span class="underline decoration-pink-400"><a href="https://jamstack.wtf" target="_blank">Jamstack developer</a></span> 
+            <div class="w-full md:w-1/2 flex flex-col justify-between gap-8">
+                <div class="flex flex-col gap-4">
+                    <p class="text-2xl sm:text-3xl">I'm a <span class="underline decoration-pink-400"><a href="https://jamstack.wtf" target="_blank" class="hover:text-zinc-600 dark:hover:text-zinc-400">Jamstack developer</a></span> 
                         interested in user interface and user experience design.</p> 
-                    <p class="text-lg sm:text-xl pb-4 md:pb-24">I'm happiest when I get to solve problems by thinking creatively.</p>
+                    <p class="text-lg sm:text-xl">I'm happiest when I get to solve problems by thinking creatively.</p>
+                    <p class="text-lg sm:text-xl">I love the intersections between design, code, and technology.</p>
+                    <p class="text-lg sm:text-xl">I'm driven by my desire to make a positive contribution to humanity and planet Earth.</p>
                 </div>
                 <div>
-                    <p class="text-xl sm:text-2xl text-right py-4"><a href="/about">Learn more about me &rarr;</a></p>
-                    <p class="text-xl sm:text-2xl text-right"><a href="/hire-me">Work with me &rarr;</a></p>
+                    <p class="text-xl sm:text-2xl text-right"><a href="/about" class="hover:text-zinc-600 dark:hover:text-zinc-400">Learn more about me &rarr;</a></p>
+                    <p class="text-xl sm:text-2xl text-right"><a href="/hire-me" class="hover:text-zinc-600 dark:hover:text-zinc-400">Work with me &rarr;</a></p>
                 </div>
             </div>
         </div>

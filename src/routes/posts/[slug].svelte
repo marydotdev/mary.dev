@@ -33,9 +33,7 @@
 <script>
   import { format } from 'date-fns'
   import { page } from '$app/stores'
-  import ButtonLink from '$lib/components/ButtonLink.svelte'
   import { name, website } from '$lib/info'
-  import ArrowLeftIcon from '$lib/components/ArrowLeftIcon.svelte'
   import PostCard from '$lib/components/PostCard.svelte';
 
   export let component
@@ -109,13 +107,9 @@
 </article>
 
 <div class="pt-12 flex justify-between">
-  <ButtonLink href={`/posts`} class="sm:hover:transform sm:hover:scale-105 transition ease-out duration-500">
-    <slot slot="icon-start">
-      <ArrowLeftIcon class="h-5 w-5" />
-    </slot>
+  <a href={`/posts`} class="sm:hover:transform sm:hover:scale-105 transition ease-out duration-500">
     Back to Posts
-    <slot slot="icon-end" />
-  </ButtonLink>
+  </a>
 </div>
 
 <!-- next/previous posts -->
@@ -145,12 +139,3 @@
 </div>
 </div>
 
-<style lang="postcss">
-  .post-preview-label {
-    @apply mb-2 text-zinc-500 uppercase text-base font-medium;
-  }
-
-  :global(.dark) .post-preview-label {
-    @apply text-zinc-400;
-  }
-</style>

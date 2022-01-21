@@ -45,8 +45,6 @@
 </script>
 
 <script>
-  import ArrowLeftIcon from '$lib/components/ArrowLeftIcon.svelte'
-  import ButtonLink from '$lib/components/ButtonLink.svelte'
   import PostPreview from '$lib/components/PostPreview.svelte'
   import ItemPreview from '$lib/components/ItemPreview.svelte'
   import { name } from '$lib/info.js'
@@ -121,19 +119,15 @@
         <!-- pagination -->
         <div class="flex visible items-center justify-between pt-8 opacity-70">
           {#if !isFirstPage}
-            <ButtonLink raised={false} href={`/posts/page/${page - 1}`}>
-              <slot slot="icon-start">
-                <ArrowLeftIcon class="h-5 w-5" />
-              </slot>
+            <a href={`/posts/page/${page - 1}`}>
               Previous
-              <slot slot="icon-end" /></ButtonLink
-            >
+            </a>
           {:else}
             <div />
           {/if}
       
           {#if hasNextPage}
-            <ButtonLink raised={false} href={`/posts/page/${page + 1}`}>Next</ButtonLink>
+            <a href={`/posts/page/${page + 1}`}>Next</a>
           {/if}
         </div>
         </div>
