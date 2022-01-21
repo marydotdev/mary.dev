@@ -60,7 +60,7 @@
             <div class="flex flex-col px-4 py-2 gap-2 border-4 border-dark/60 dark:border-light/60 rounded-lg">
                 <a href={authorUrl} target="_blank" rel="noopener noreferrer">
                     <div class="flex justify-start gap-4">
-                        <img src="/static/marypic.jpeg" alt="avatar" class="w-12 h-12 rounded-full" />
+                        <img src="/marypic.jpeg" alt="avatar" class="w-12 h-12 rounded-full" />
                                 
                         <div class="flex flex-col">
                             <p class="text-xl font-medium">Mary Haedrich</p>
