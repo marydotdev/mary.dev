@@ -11,7 +11,6 @@
 </script>
 
 <script>
-  // import ButtonLink from '$lib/components/ButtonLink.svelte'
   // import PostCard from '$lib/components/PostCard.svelte'
   import Matter from '$lib/components/Matter.svelte'
   import { name } from '$lib/info.js'
@@ -30,7 +29,7 @@
   <!-- recent posts -->
     <!-- <h2 class="pt-12 font-display font-medium tracking-tight text-2xl md:text-3xl flex items-baseline gap-4 !mb-2">
       Recent Posts
-      <ButtonLink href="/posts" size="small" raised={false} class="opacity-60">View All</ButtonLink>
+      <a href="/posts" class="opacity-60">View All</a>
     </h2>
     <div class="prose prose-zinc prose-md sm:prose sm:prose-zinc sm:prose-lg sm:max-w-none dark:prose-invert">
     <div class="grid gap-4 grid-cols-1 sm:grid-cols-2">
