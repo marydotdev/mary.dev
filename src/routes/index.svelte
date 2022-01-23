@@ -11,11 +11,11 @@
 </script>
 
 <script>
-  // import PostCard from '$lib/components/PostCard.svelte'
-  import Matter from '$lib/components/Matter.svelte'
+  import PostCard from '$lib/components/PostCard.svelte'
+  import Hero from '$lib/components/Hero.svelte';
   import { name } from '$lib/info.js'
 
-  // export let recentPosts
+  export let recentPosts
 </script>
 
 <svelte:head>
@@ -23,19 +23,22 @@
 </svelte:head>
 
 
-<div class="max-w-4xl mx-auto">
-  <Matter />
-
+<div class="max-w-2xl mx-auto">
+  <Hero />
+  <img src="/maryandlaptop.png" alt="marydotdev" />
   <!-- recent posts -->
-    <!-- <h2 class="pt-12 font-display font-medium tracking-tight text-2xl md:text-3xl flex items-baseline gap-4 !mb-2">
+    <h2 class="pt-12 font-display font-medium tracking-tight text-2xl md:text-3xl flex items-baseline gap-4 !mb-2">
       Recent Posts
-      <a href="/posts" class="opacity-60">View All</a>
     </h2>
     <div class="prose prose-zinc prose-md sm:prose sm:prose-zinc sm:prose-lg sm:max-w-none dark:prose-invert">
-    <div class="grid gap-4 grid-cols-1 sm:grid-cols-2">
+    <div class="grid gap-4 grid-cols-1">
       {#each recentPosts as post}
-          <PostCard {post} small />
+          <PostCard {post} />
       {/each}
     </div>
-  </div> -->
+  </div>
+
+  <div class="text-right pt-8 text-lg md:text-xl">
+    <a href="/posts" class="opacity-60 hover:opacity-100">View All &rarr;</a>
+  </div>
 </div>

@@ -19,7 +19,7 @@
 
 <svelte:window bind:scrollY={y}/>
 <div class="max-w-full h-screen">
-  <div class="flex flex-col bg-light text-dark dark:bg-dark dark:text-light min-h-screen">
+  <div class="flex flex-col bg-light text-dark dark:bg-dark dark:text-light h-screen">
    <Header />
 
     <!-- Scroll to Top button START-->

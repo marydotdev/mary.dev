@@ -59,7 +59,7 @@
                         <h3 class="text-2xl">Recently Tweeted</h3>
                     </div>
                                 
-                        <div class="flex flex-col px-4 py-2 gap-2 border-4 border-dark/60 dark:border-light/60 rounded-lg md:hover:transform md:hover:scale-105 transition ease-out duration-300">
+                        <div class="flex flex-col px-4 pt-4 pb-2 gap-2 border-2 border-dark dark:border-light rounded-lg md:hover:transform md:hover:scale-105 transition ease-out duration-300">
                             <a href={authorUrl} target="_blank" rel="noopener noreferrer">
                                 <div class="flex justify-start gap-4">
                                     <img src="/twitter-avatar.png" alt="avatar" class="w-16 h-16 rounded-full" /> 

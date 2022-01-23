@@ -72,7 +72,7 @@
 <div class="max-w-4xl mx-auto flex flex-col flex-grow">
   <h1 class="text-3xl sm:text-5xl font-display font-regular tracking-tight pb-4">Blog Posts</h1>
       <p class="font-display text-xl text-dark/90 dark:text-light/90 pb-4">
-          I write about web development, UI design, and other interesting things I stumble across while surfing the world wide web. I publish a lot of posts while they are still works in progress. Use the search bar below to filter posts by title.
+          I write about web development, UI design, and other interesting things I stumble across while surfing the world wide web. Use the search bar below to filter posts by title.
       </p>
 
       <div class="relative w-full sm:w-2/3  mb-8 mx-auto">

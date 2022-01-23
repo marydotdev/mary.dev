@@ -35,6 +35,7 @@
   import { page } from '$app/stores'
   import { name, website } from '$lib/info'
   import PostCard from '$lib/components/PostCard.svelte';
+  import ToC from '$lib/components/ToC.svelte';
 
   export let component
 
@@ -76,7 +77,7 @@
   <meta name="twitter:image" content={ogImage} />
 </svelte:head>
 
-<div class="max-w-4xl mx-auto">
+<div class="max-w-2xl mx-auto">
 <div class="prose prose-zinc prose-md sm:prose sm:prose-zinc sm:prose-lg sm:max-w-none dark:prose-invert">
 <article class="relative max-w-2xl mx-auto">
   <h1 class="!mt-0 !mb-2">
@@ -94,7 +95,7 @@
     <!-- render the post -->
     <svelte:component this={component} />
     
-    <!-- Table of Contents, need to adjust for max-w-4xl
+    Table of Contents, need to adjust for max-w-4xl
 
     <div class="hidden xl:block absolute not-prose left-[100%]" aria-label="Table of Contents">
       <div class="fixed z-10 px-4 py-2 ml-8 top-[4.5rem]">
@@ -102,12 +103,12 @@
         <ToC allowedHeadings={['h2', 'h3', 'h4', 'h5', 'h6']} />
       </div>
     </div>
-  -->
+ 
   </div>
 </article>
 
-<div class="pt-12 flex justify-between">
-  <a href={`/posts`} class="sm:hover:transform sm:hover:scale-105 transition ease-out duration-500">
+<div class="pt-12 flex justify-end">
+  <a href={`/posts`} class="!no-underline sm:hover:transform sm:hover:scale-105 transition ease-out duration-500">
     Back to Posts
   </a>
 </div>
@@ -118,7 +119,7 @@
   <div class="grid gap-8 grid-cols-1 sm:grid-cols-2">
     {#if previous}
       <div class="flex flex-col">
-        <h6 class="not-prose post-preview-label">Previous Post</h6>
+        <h6 class="not-prose post-preview-label !mb-4">Previous Post</h6>
         <div class="flex-1 post-preview">
           <PostCard post={previous} small />
         </div>
@@ -128,7 +129,7 @@
     {/if}
     {#if next}
       <div class="flex flex-col">
-        <h6 class="not-prose post-preview-label flex justify-end">Next Post</h6>
+        <h6 class="not-prose post-preview-label flex justify-end !mb-4">Next Post</h6>
         <div class="flex-1 post-preview">
           <PostCard post={next} small />
         </div>
