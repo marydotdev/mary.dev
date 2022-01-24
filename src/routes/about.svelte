@@ -62,7 +62,7 @@
                         <div class="flex flex-col px-4 pt-4 pb-2 gap-2 border-2 border-dark dark:border-light rounded-lg md:hover:transform md:hover:scale-105 transition ease-out duration-300">
                             <a href={authorUrl} target="_blank" rel="noopener noreferrer">
                                 <div class="flex justify-start gap-4">
-                                    <img src="/twitter-avatar.png" alt="avatar" class="w-16 h-16 rounded-full" /> 
+                                    <img src="/maryandlaptop.png" alt="avatar" class="w-16 h-16 rounded-full bg-black" /> 
                                     <div class="flex flex-col">
                                         <p class="text-xl font-medium">Mary Haedrich</p>
                                         <p class="text-md">@marydotdev</p>

@@ -94,8 +94,6 @@
   <div class="relative">
     <!-- render the post -->
     <svelte:component this={component} />
-    
-    Table of Contents, need to adjust for max-w-4xl
 
     <div class="hidden xl:block absolute not-prose left-[100%]" aria-label="Table of Contents">
       <div class="fixed z-10 px-4 py-2 ml-8 top-[4.5rem]">
