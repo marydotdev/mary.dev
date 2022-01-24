@@ -1,6 +1,6 @@
 ---
 title: 'Simple Scroll to Top Button'
-date: '01-08-2022'
+date: '01-20-2022'
 ---
 
 Creating a scroll to top button is easy with Svelte. Learn how I built a scroll to top button on my site with Svelte and Tailwind.

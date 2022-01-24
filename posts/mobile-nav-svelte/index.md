@@ -1,6 +1,6 @@
 ---
 title: 'Building an animated mobile navigation menu with Svelte'
-date: '01-06-2022'
+date: '01-24-2022'
 ---
 
 Building a responsive mobile navigation menu is simple using Svelte's built in animation tools. In this post I'll walk you through how I built the responsive navigation bar on this site, and we'll focus on the mobile UI in particular.
