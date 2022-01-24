@@ -21,6 +21,12 @@ const config = {
     target: '#svelte',
     adapter: vercel(),
 
+    // if you are not using the static adapter and
+    // you don't want prerendering, remove this section
+    prerender: {
+      entries: ['*', '/sitemap.xml', '/rss.xml']
+    },
+
     vite: {
       // allows vite access to ./posts
       server: {
