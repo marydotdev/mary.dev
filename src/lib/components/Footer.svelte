@@ -16,7 +16,7 @@
             <a href="mailto:mary.haedrich@gmail.com" class="hover:transform hover:scale-110 transition ease-out duration-300">
                 <MailIcon size="1.5x" />
             </a>
-            <a href="/rss.xml" class="hover:transform hover:scale-110 transition ease-out duration-300">
+            <a href="/" class="hover:transform hover:scale-110 transition ease-out duration-300">
                 <RssIcon size="1.5x" />
             </a>
         </div>

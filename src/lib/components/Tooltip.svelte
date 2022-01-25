@@ -20,6 +20,7 @@
 
 <div
 	on:mouseover={mouseOver}
+	on:focus
   on:mouseleave={mouseLeave}
 	on:mousemove={mouseMove}>
 	<slot />
