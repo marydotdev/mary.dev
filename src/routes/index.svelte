@@ -1,21 +1,42 @@
 <script context="module">
-  export const prerender = true
+  import { gql, GraphQLClient } from 'graphql-request'
 
-  export const load = async ({ fetch }) => {
+  export async function load() {
+    const graphcms = new GraphQLClient(
+      import.meta.env.VITE_GRAPHCMS_URL,
+      {
+        headers: {},
+      }
+    )
+
+    const query = gql`
+      query PostsIndex {
+        posts {
+          id
+          title
+          slug
+          date
+          description
+        }
+      }
+    `
+
+    const { posts } = await graphcms.request(query)
+
     return {
       props: {
-        recentPosts: await fetch('/posts.json?limit=2').then((res) => res.json())
-      }
+        posts,
+      },
     }
   }
 </script>
 
 <script>
-  import PostCard from '$lib/components/PostCard.svelte'
+  import PostPreview from '$lib/components/PostPreview.svelte';
   import Hero from '$lib/components/Hero.svelte';
   import { name } from '$lib/info.js'
 
-  export let recentPosts
+  export let posts
 </script>
 
 <svelte:head>
@@ -27,18 +48,18 @@
   <Hero />
   <img src="/maryandlaptop.png" alt="marydotdev" />
   <!-- recent posts -->
-    <h2 class="pt-12 font-display font-medium tracking-tight text-2xl md:text-3xl flex items-baseline gap-4 !mb-2">
-      Recent Posts
-    </h2>
+    <div class="flex items-baseline gap-4 pt-12 pb-8 font-display tracking-tight">
+      <h2 class="font-medium text-2xl md:text-3xl">
+        Recent Posts
+      </h2>
+      <a href="/posts" class="text-lg md:text-xl opacity-60 hover:opacity-100">View All &rarr;</a>
+    </div>
+    
     <div class="prose prose-zinc prose-md sm:prose sm:prose-zinc sm:prose-lg sm:max-w-none dark:prose-invert">
     <div class="grid gap-4 grid-cols-1">
-      {#each recentPosts as post}
-          <PostCard {post} />
+      {#each posts as post}
+          <PostPreview {post} />
       {/each}
     </div>
-  </div>
-
-  <div class="text-right pt-8 text-lg md:text-xl">
-    <a href="/posts" class="opacity-60 hover:opacity-100">View All &rarr;</a>
   </div>
 </div>

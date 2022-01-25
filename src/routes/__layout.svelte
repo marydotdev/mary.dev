@@ -1,7 +1,6 @@
 <script>
   import '../app.css'
   import '../prism.css'
-  import 'focus-visible'
   import Header from '$lib/components/Header.svelte';
   import Footer from '$lib/components/Footer.svelte';
   import { fade } from 'svelte/transition';
@@ -33,7 +32,7 @@
     {/if}
     <!-- Scroll to Top button END -->
 
-    <main class="grow px-4">
+    <main class="grow px-4 sm:px-8">
       <slot />
     </main>
     
