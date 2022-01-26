@@ -46,7 +46,7 @@
 
 <div class="max-w-2xl mx-auto">
   <Hero />
-  <img src="/maryandlaptop.png" alt="marydotdev" class="w-96 h-auto mx-auto md:w-max" />
+  <img src="/computermary.png" alt="marydotdev" class="w-96 h-auto mx-auto md:w-max" />
   <!-- recent posts -->
     <div class="flex items-baseline gap-4 pt-12 pb-8 font-display tracking-tight">
       <h2 class="font-medium text-2xl md:text-3xl">
