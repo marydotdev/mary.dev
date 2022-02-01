@@ -34,6 +34,7 @@
 <script>
   import PostPreview from '$lib/components/PostPreview.svelte';
   import Hero from '$lib/components/Hero.svelte';
+  import Matter from '$lib/components/Matter.svelte';
   import { name } from '$lib/info.js'
 
   export let posts
@@ -62,4 +63,13 @@
       {/each}
     </div>
   </div>
+
+  <div class="flex items-baseline gap-4 pt-12 pb-8 font-display tracking-tight">
+    <h2 class="font-medium text-2xl md:text-3xl">
+      Use Wrecking Ball
+    </h2>
+    <a href="/projects" class="text-lg md:text-xl opacity-60 hover:opacity-100">Projects &rarr;</a>
+  </div>
+
+  <Matter />
 </div>

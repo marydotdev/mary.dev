@@ -54,7 +54,17 @@ module.exports = {
                 marginLeft: 'auto',
                 marginRight: 'auto'
               },
+              video: {
+                width: 'auto',
+                height: 'auto',
+                marginLeft: 'auto',
+                marginRight: 'auto'
+              },
               'h1,h2,h3,h4,h5,h6': {
+                margin: 0,
+                paddingTop: theme('spacing.4'),
+                paddingBottom: theme('spacing.4'),
+                fontWeight: '500 !important',
                 a: {
                   color: 'inherit',
                   textDecoration: 'none'

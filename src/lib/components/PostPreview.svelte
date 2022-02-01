@@ -6,7 +6,7 @@
 
 <div class="font-display flex flex-col rounded-lg sm:hover:transform sm:hover:scale-105 transition ease-out duration-500">
   <div>
-      <h3 class="!mt-0 !mb-2">
+      <h3 class="!mt-0 !mb-2 !py-0">
         <a href={`/posts/${post.slug}`}>{post.title}</a>
       </h3>
 
