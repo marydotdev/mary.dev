@@ -1,5 +1,4 @@
 <script>
-  import Chat from '$lib/components/Chat.svelte';
   import { name } from '$lib/info.js'
 </script>
     
@@ -29,8 +28,6 @@
       <li><a href="/resume" class="underline sm:hover:underline sm:no-underline">Resume</a></li>
     </ul>
   </div>
-
-
 </div>
     
         
