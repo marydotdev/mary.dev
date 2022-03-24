@@ -40,7 +40,7 @@
 
 	<div class="flex flex-col absolute left-0 px-4 w-full h-screen bg-light dark:bg-dark"
 	in:fly="{{delay: 150, duration: 400, x: 0, y: 800, opacity: 100, easing: quintOut}}"
-	out:fly="{{delay: 550, duration: 400, x: 0, y: 800, opacity: 100, easing: quintOut}}">
+	out:fly="{{delay: 450, duration: 400, x: 0, y: 800, opacity: 100, easing: quintOut}}">
 		<ul
 			class="flex flex-col items-start pt-12 font-medium"
 			class:menuRendered={isMenuRendered}>
