@@ -60,7 +60,7 @@
       <div class="flex flex-col-reverse items-center md:flex-row gap-8">  
         <div class="flex flex-col gap-8">
           <h3 class="text-2xl sm:text-3xl md:text-4xl leading-10 font-medium tracking-tighter">
-            <a class="underline sm:no-underline sm:hover:underline" href="/newsletter">Design, Develop, Deploy 🚀</a> is a biweekly newsletter written by me, Mary Haedrich, about digital product design and development. Each issue features an original product that is launched along with the newsletter.
+            <a class="underline sm:no-underline sm:hover:underline" href="https://buttondown.email/marydotdev" target="_blank">Design, Develop, Deploy 🚀</a> is a biweekly newsletter written by me, Mary Haedrich, about digital product design and development. Each issue features an original product that is launched along with the newsletter.
           </h3>
 
           <Subscribe />
@@ -68,7 +68,7 @@
 
           <div class="">
             <div class="w-96">
-              <img src="/static/img/mary/marydotdev.png" alt="marydotdev" class="aspect-square" />
+              <img src="/img/mary/marydotdev.png" alt="marydotdev" class="aspect-square" />
             </div>
         </div>
     </div>  
