@@ -1,27 +1,36 @@
 <script>
-    import { name } from '$lib/info.js'
-
+  import Chat from '$lib/components/Chat.svelte';
+  import { name } from '$lib/info.js'
 </script>
-
-<svelte:head>
-  <title>{name} | About Me</title>
-</svelte:head>
-
-<div class="max-w-4xl mx-auto font-display">
-    <h1 class="text-3xl sm:text-5xl font-regular tracking-tight pb-4">About Me</h1>
-
-    <div class="flex flex-col justify-center mx-auto gap-4">        
-        <div class="grid sm:grid-cols-2 items-center gap-4 sm:gap-0">
-            <img class="w-64 h-64 md:w-72 md:h-72 rounded-xl mx-auto" src="/marypic.jpeg" alt="semi professional headshot of mary" />
-            <p class="text-2xl sm:text-3xl md:text-4xl">My name is Mary and I'm a front-end developer from New York focused on creating fast, responsive web apps.</p>
-        </div>
-      
-        <p class="text-2xl">
-            Someday, I <span class="line-through">would like to</span> will combine my interests in medicine, technology, and entrepreneurship to start my own biotechnology company. Right now, I want to learn as much as I can from anyone willing to teach me.  
-        </p>
-    </div>           
-</div>
-
-
-
     
+<svelte:head>
+  <title>{name} | About</title>
+</svelte:head>
+    
+<div class="w-full max-w-6xl mx-auto flex flex-col justify-center py-8 px-2">
+  <h1 class="text-7xl font-bold tracking-tighter">Hi, I'm Mary.</h1>
+
+  <div class="py-8">
+      <div class="text-5xl font-medium tracking-tight">
+        <h2>
+          I'm a full stack developer 
+          <br />
+          from New York. 
+        </h2>
+      </div>
+  </div>
+
+  <div>
+    <ul class="text-2xl space-y-4">
+      <li><a href="mailto:mary.haedrich@gmail.com" class="underline sm:hover:underline sm:no-underline">Email</a></li>
+      <li><a href="https://github.com/marydotdev" class="underline sm:hover:underline sm:no-underline">Github</a></li>
+      <li><a href="https://twitter.com/marydotdev" class="underline sm:hover:underline sm:no-underline">Twitter</a></li>
+      <li><a href="https://dribbble.com/marydotdev" class="underline sm:hover:underline sm:no-underline">Dribbble</a></li>
+      <li><a href="/resume" class="underline sm:hover:underline sm:no-underline">Resume</a></li>
+    </ul>
+  </div>
+
+
+</div>
+    
+        

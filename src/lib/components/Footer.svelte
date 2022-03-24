@@ -1,24 +1,8 @@
 <script>
-    import { TwitterIcon, GithubIcon, YoutubeIcon, MailIcon, RssIcon } from 'svelte-feather-icons';
-</script>
+import SocialLinks from "./SocialLinks.svelte";
 
-<footer class="pt-12 pb-4 font-display text-center bottom-0">
-        <div class="flex justify-center gap-8 py-4">
-            <a href="https://twitter.com/marydotdev" alt="twitter.com/marydotdev" class="hover:transform hover:scale-110 transition ease-out duration-300">
-                <TwitterIcon size="1.5x" />
-            </a>
-            <a href="https://github.com/marydotdev" alt="github.com/marydotdev" class="hover:transform hover:scale-110 transition ease-out duration-300">
-                <GithubIcon size="1.5x" />
-            </a>
-            <a href="https://youtube.com/marydotdev" alt="youtube.com/marydotdev" class="hover:transform hover:scale-110 transition ease-out duration-300">
-                <YoutubeIcon size="1.5x" />
-            </a>
-            <a href="mailto:mary.haedrich@gmail.com" alt="email" class="hover:transform hover:scale-110 transition ease-out duration-300">
-                <MailIcon size="1.5x" />
-            </a>
-            <a href="/" alt="rss" class="hover:transform hover:scale-110 transition ease-out duration-300">
-                <RssIcon size="1.5x" />
-            </a>
-        </div>
-    <a href="https://twitter.com/marydotdev" class="text-md font-display tracking-tight opacity-70 hover:opacity-100 transition ease-out duration-300">Made by Mary</a>
+</script>
+<footer class="pt-12 pb-4 font-inter flex flex-col items-center justify-center text-center bottom-0">
+    <SocialLinks />
+    <a href="https://twitter.com/marydotdev" class="font-inter opacity-70 hover:opacity-100 transition ease-out duration-300">Made by Mary</a>
 </footer>

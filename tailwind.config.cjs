@@ -9,8 +9,10 @@ module.exports = {
         light: '#F6F6F6',
       },
       fontFamily: {
-        'display': ['Rubik'],
-        'mono': ['Fira Mono'],
+        'rubik': ['Rubik'],
+        'fira': ['Fira Mono'],
+        'syne': ['Syne'],
+        'inter': ['Inter'],
       },
       typography: ({ theme }) => {
         return {
@@ -19,7 +21,7 @@ module.exports = {
               pre: {
                 code: {
                   padding: '0 !important',
-                  fontSize: theme('fontSize.base')[0]
+                  fontSize: theme('fontSize.base')[0],
                 }
               },
               code: {
@@ -40,7 +42,7 @@ module.exports = {
                 content: '""'
               },
               hr: {
-                borderColor: theme('colors.slate.300')
+                borderColor: theme('colors.zinc.500')
               },
               ul: {
                 marginTop: '0 !important',
@@ -92,7 +94,7 @@ module.exports = {
           invert: {
             css: {
               hr: {
-                borderColor: theme('colors.slate.700')
+                borderColor: theme('colors.zinc.500')
               },
               code: {
                 color: theme('colors.slate.300'),
@@ -112,5 +114,5 @@ module.exports = {
       }
     }
   },
-  plugins: [require('@tailwindcss/typography')]
+  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/line-clamp')]
 }

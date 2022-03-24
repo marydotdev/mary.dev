@@ -1,8 +1,9 @@
 <script>
-    import { MoonIcon, SunIcon } from 'svelte-feather-icons';
+    import {Icon} from '@steeze-ui/svelte-icon'
+    import {Sun, Moon} from '@steeze-ui/heroicons'
     import { browser } from '$app/env';
 
-    let prefersLight = browser ? Boolean(JSON.parse(localStorage.getItem('prefersLight'))) : false
+    export let prefersLight = browser ? Boolean(JSON.parse(localStorage.getItem('prefersLight'))) : false
 </script>
 
 
@@ -12,7 +13,7 @@
           role="switch"
           aria-label="Toggle Dark Mode"
           aria-checked={!prefersLight}
-          class="flex justify-center items-center w-6 h-6 sm:w-12 sm:h-12"
+          class="flex gap-4 md:justify-center items-center md:relative md:gap-2 md:px-3 md:py-2 md:rounded-md md:bg-light md:dark:bg-dark"
           on:click={() => {
             prefersLight = !prefersLight
             localStorage.setItem('prefersLight', prefersLight.toString())
@@ -25,9 +26,17 @@
           }}
         >
           {#if prefersLight}
-            <MoonIcon size="2x" />
+         
+           
+              <Icon src={Sun} theme='outline' size="24" class="relative" />
+              <p>Light</p>
+
+
           {:else}
-            <SunIcon size="2x" />
+          
+            <Icon src={Moon} theme='outline' size="24" class="relative" />
+            <p>Dark</p>
+
           {/if}
         </button>
       {/if}

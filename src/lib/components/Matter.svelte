@@ -91,18 +91,18 @@
     
     };
     
-    </script>
+</script>
     
-    <div class="relative w-full pb-8">
-        <div class="absolute w-36 sm:w-64 inset-x-1/2 top-12 text-center">
-            <h2 class="z-0 text-xl sm:text-4xl uppercase font-display font-bold">
-            I create interactive <span class="text-3xl sm:text-6xl tracking-wide">user</span> experiences       
-            </h2>
-        </div>
-    
-        <div class="flex justify-center">
-            <div id="matter-js" class="z-10"></div>
-        </div>
-        
+<div class="relative w-full pb-8">
+    <div class="absolute w-36 inset-x-1/2 top-12 text-center">
+        <h2 class="z-0 text-xl uppercase font-display font-bold">
+        I create interactive <span class="text-3xl tracking-wide">user</span> experiences       
+        </h2>
     </div>
+    
+    <div class="flex justify-center">
+        <div id="matter-js" class="z-10"></div>
+    </div>
+        
+</div>
     

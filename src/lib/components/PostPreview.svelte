@@ -1,21 +1,36 @@
 <script>
-  import { format } from 'date-fns'
+  import { format, parseISO } from 'date-fns'
 
   export let post
 </script>
-
-<div class="font-display flex flex-col rounded-lg sm:hover:transform sm:hover:scale-105 transition ease-out duration-500">
-  <div>
-      <h3 class="!mt-0 !mb-2 !py-0">
-        <a href={`/posts/${post.slug}`}>{post.title}</a>
-      </h3>
-
-    <div class="opacity-70">
-      <time datetime={new Date(post.date).toISOString()}>{format(new Date(post.date), 'MMMM d, yyyy')}</time>
+  <div class="flex flex-col rounded-lg overflow-hidden sm:hover:transition sm:hover:transform sm:hover:scale-[1.03] sm:duration-150">
+    <!-- <div class="flex-shrink-0">
+      <img class="h-48 w-full object-cover" src={`/static/posts/${post.metadata.coverImage}`} alt="{post.slug}">
+    </div> -->
+    <div class="flex-1 bg-dark/5 dark:bg-light/5 p-6 flex flex-col justify-between">
+      <div class="flex-1">
+        <a href={`/blog/${post.slug}`} class="block mt-2">
+          <p class="text-xl font-semibold">{post.title}</p>
+          <p class="mt-3 line-clamp-2">{@html post.preview.html}</p>
+        </a>
+      </div>
+      <div class="mt-6 flex items-center">
+        <div class="flex-shrink-0">
+          <a href="https://twitter.com/marydotdev">
+            <span class="sr-only">Mary Haedrich</span>
+            <img class="h-10 w-10 rounded-full" src="/static/img/mary/professionalmary.jpeg" alt="Mary Haedrich">
+          </a>
+        </div>
+        <div class="ml-3">
+          <p class="text-sm font-medium text-dark dark:text-light">
+            <a href="https://twitter.com/marydotdev" class="hover:underline">Mary Haedrich</a>
+          </p>
+          <div class="flex space-x-1 text-sm text-dark dark:text-light opacity-80">
+            <time>{format(new Date(parseISO(post.date)), 'MMMM d, yyyy')}</time>
+            <span aria-hidden="true"> &middot; </span>
+            <span>{post.readingTime}</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="flex-1">{post.description}</div>
-    <div class="flex justify-end w-full">
-      <a href={`/posts/${post.slug}`} class="!no-underline py-2">Read More &rarr;</a>
-    </div>
-</div>
