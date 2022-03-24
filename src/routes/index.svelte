@@ -44,7 +44,7 @@
             </h2>
 
             <h2 class="text-2xl sm:text-3xl md:text-4xl leading-10 font-medium tracking-tighter">
-              <span>My dream job is 'eccentric billionaire' but currently I work at <a href="https://Sticker.com" target="_blank" class="underline sm:no-underline sm:hover:underline">Sticker.com</a> and <a href="/" class="underline sm:no-underline sm:hover:underline">freelance</a> on the side.</span>
+              <span>My dream job is 'eccentric billionaire' but currently I work at <a href="https://Sticker.com" target="_blank" class="underline sm:no-underline sm:hover:underline">Sticker.com</a> and <a href="/work" class="underline sm:no-underline sm:hover:underline">freelance</a> on the side.</span>
             </h2>
 
             <h2 class="text-2xl sm:text-3xl md:text-4xl leading-10 font-medium tracking-tighter">
@@ -67,7 +67,7 @@
         </div>
 
           <div class="">
-            <div class="w-96">
+            <div class="w-64 lg:w-96">
               <img src="/img/mary/marydotdev.png" alt="marydotdev" class="aspect-square" />
             </div>
         </div>

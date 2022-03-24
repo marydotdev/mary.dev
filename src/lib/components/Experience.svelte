@@ -6,12 +6,12 @@
     <div class="flex flex-col gap-12">
         <div class="flex flex-col gap-4">
             <div class="sm:flex sm:justify-between">
-                <p class="text-xl sm:text-2xl"><span class="font-bold">Full Stack Developer</span>, Sticker.com</p>
+                <p class="text-xl sm:text-2xl"><span class="font-bold">Web Developer</span>, Sticker.com</p>
                 <p class="text-lg">2021-Present</p>
             </div>
             <hr />
             <div>
-                <p class="text-lg sm:text-xl">Designed and developed admin dashboard tools to create a better user experience and make analytics insights readily accessible. Wrote clear, efficient, maintainable code and adapted to fast pace development cycle.</p>
+                <p class="text-lg sm:text-xl">Designed and developed reusable components using HTML, CSS, and Javascript. Prototyped responsive user experience journies. Wrote clear, efficient, maintainable code adhering to standard best practices.</p>
             </div>
         </div>
 
@@ -28,12 +28,12 @@
 
         <div class="flex flex-col gap-4">
             <div class="sm:flex sm:justify-between">
-                <p class="text-xl sm:text-2xl"><span class="font-bold">Web Developer</span>, Freelance</p>
-                <p class="text-lg">2017-Present</p>
+                <p class="text-xl sm:text-2xl"><span class="font-bold">RamVan Driver</span>, Fordham</p>
+                <p class="text-lg">2014-2017</p>
             </div>
             <hr />
             <div>
-                <p class="text-lg sm:text-xl">Used HTML, CSS, and JS to build websites for friends and personal projects.</p>
+                <p class="text-lg sm:text-xl">Memorized 6 routes between the Bronx and Manhattan. Communicated and coordinated with dispatchers to pick the fastest route considering current time, traffic, weather, and events. Safely transported up to 14 passengers per trip.</p>
             </div>
         </div>
     </div>       

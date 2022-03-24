@@ -8,7 +8,7 @@
 </script>
 
 
-<div class="min-h-screen flex flex-col">   
+<div class="min-h-screen flex flex-col overflow-x-hidden">   
   
   <div class="sticky top-0 z-50">
     <Header />

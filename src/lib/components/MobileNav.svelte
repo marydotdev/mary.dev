@@ -3,6 +3,8 @@
     import {Menu, X} from '@steeze-ui/heroicons'
 	import {Home, User, Pencil, LightningBolt} from '@steeze-ui/heroicons'
 	import ThemeToggle from './ThemeToggle.svelte';
+	import { fly } from "svelte/transition";
+	import { quintOut } from 'svelte/easing';
 
 	
 	let isOpen = false;
@@ -36,7 +38,9 @@
 
 	{#if isOpen}
 
-	<div class="flex flex-col absolute left-0 px-4 w-full h-screen bg-light dark:bg-dark">
+	<div class="flex flex-col absolute left-0 px-4 w-full h-screen bg-light dark:bg-dark"
+	in:fly="{{delay: 150, duration: 400, x: 0, y: 800, opacity: 100, easing: quintOut}}"
+	out:fly="{{delay: 550, duration: 400, x: 0, y: 800, opacity: 100, easing: quintOut}}">
 		<ul
 			class="flex flex-col items-start pt-12 font-medium"
 			class:menuRendered={isMenuRendered}>
@@ -44,7 +48,10 @@
 				class="text-dark dark:text-light">
 				<a class="flex justify-center items-center gap-4 w-auto py-4 px-2" 
 				on:click={() => setTimeout(() => isOpen = false, 200)}
-				href="/">
+				href="/"
+				in:fly="{{delay: 300, duration: 400, x: 400, y: 0, opacity: 0, easing: quintOut}}"
+				out:fly="{{delay: 400, duration: 400, x: 0, y: 500, opacity: 0, easing: quintOut}}"
+				>
 					<Icon src={Home} theme='outline' size="24" class="relative" />
 					<p class="text-xl">Home</p>
 				</a>
@@ -54,7 +61,9 @@
 				class="text-dark dark:text-light">
 				<a class="flex justify-center items-center gap-4 w-auto py-4 px-2" 
 				on:click={() => setTimeout(() => isOpen = false, 200)} 
-				href="/about">
+				href="/about"
+				in:fly="{{delay: 350, duration: 400, x: 400, y: 0, opacity: 0, easing: quintOut}}"
+				out:fly="{{delay: 350, duration: 400, x: 0, y: 500, opacity: 0, easing: quintOut}}">
 					<Icon src={User} theme='outline' size="24" class="relative" />
 					<p class="text-xl">About</p>
 				</a>
@@ -64,7 +73,9 @@
 				class="text-dark dark:text-light">
 				<a class="flex justify-center items-center gap-4 w-auto py-4 px-2" 
 				on:click={() => setTimeout(() => isOpen = false, 200)}
-				href="/blog">
+				href="/blog"
+				in:fly="{{delay: 400, duration: 400, x: 400, y: 0, opacity: 0, easing: quintOut}}"
+				out:fly="{{delay: 300, duration: 400, x: 0, y: 500, opacity: 0, easing: quintOut}}">
 					<Icon src={Pencil} theme='outline' size="24" class="relative" />
 					<p class="text-xl">Blog</p>
 				</a>
@@ -74,7 +85,9 @@
 				class="text-dark dark:text-light">
 				<a class="flex justify-center items-center gap-4 w-auto py-4 px-2"
 				on:click={() => setTimeout(() => isOpen = false, 200)} 
-				href="/work">
+				href="/work"
+				in:fly="{{delay: 450, duration: 400, x: 400, y: 0, opacity: 0, easing: quintOut}}"
+				out:fly="{{delay: 250, duration: 400, x: 0, y: 500, opacity: 0, easing: quintOut}}">
 					<Icon src={LightningBolt} theme='outline' size="24" class="relative" />
 					<p class="text-xl">Work</p>
 				</a>
@@ -83,7 +96,9 @@
 			<li
 				class="text-dark dark:text-light">
 				<div class="flex justify-center items-center gap-4 w-auto py-4 px-2"
-				on:click={() => setTimeout(() => isOpen = false, 200)}>
+				on:click={() => setTimeout(() => isOpen = false, 200)}
+				in:fly="{{delay: 500, duration: 400, x: 400, y: 0, opacity: 0, easing: quintOut}}"
+				out:fly="{{delay: 200, duration: 400, x: 0, y: 500, opacity: 0, easing: quintOut}}">
 				<div class="text-xl">
 					<ThemeToggle />
 				</div>

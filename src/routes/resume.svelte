@@ -10,7 +10,7 @@ import Experience from "$lib/components/Experience.svelte";
         <h3 class="text-xl sm:text-2xl font-medium pb-4">www.mary.dev | mary.haedrich@gmail.com | (631) 983-7978</h3>
 
         <p class="text-xl">
-            <a href="/MaryHaedrich-Feb2022.pdf" target="_blank" class="underline">Download a PDF</a>
+            <a href="/MaryHaedrich-Mar2022.pdf" target="_blank" class="underline">Download a PDF</a>
         </p>
     </div>
 
@@ -49,7 +49,7 @@ import Experience from "$lib/components/Experience.svelte";
 
     <div class="pt-12 text-center">
         <p class="text-xl">
-            <a href="/MaryHaedrich-Feb2022.pdf" target="_blank" class="underline">Download a PDF</a>
+            <a href="/MaryHaedrich-Mar2022.pdf" target="_blank" class="underline">Download a PDF</a>
         </p>
     </div>
 </div>
