@@ -13,16 +13,16 @@
       class="mySwiper"
     >
       <SwiperSlide>
-        <img src="/static/img/mary/maryandlillie.png" alt="Mary and Lillie" />
+        <img src="/img/mary/maryandlillie.png" alt="Mary and Lillie" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="/static/img/mary/maryselfie.png" alt="Selfie of Mary" />
+        <img src="/img/mary/maryselfie.png" alt="Selfie of Mary" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="/static/img/mary/marywatermelon.png" alt="Mary in a watermelon pool tube" />
+        <img src="img/mary/marywatermelon.png" alt="Mary in a watermelon pool tube" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="/static/img/mary/maryvirgin.png" alt="Mary as the Virgin Mary" />
+        <img src="/img/mary/maryvirgin.png" alt="Mary as the Virgin Mary" />
       </SwiperSlide>
     </Swiper>
     
