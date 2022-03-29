@@ -7,9 +7,15 @@ import Experience from "$lib/components/Experience.svelte";
 <div class="w-full max-w-6xl mx-auto flex flex-col justify-center py-8 px-2">
     <div class="text-center">
         <h2 class="text-5xl sm:text-7xl font-bold tracking-tight pb-4">Mary Haedrich</h2>
-        <h3 class="text-xl sm:text-2xl font-medium pb-4">www.mary.dev | mary.haedrich@gmail.com | (631) 983-7978</h3>
+        <ul class="text-xl sm:text-2xl font-medium pb-4 flex flex-col md:flex-row justify-center md:gap-2">
+            <li>www.mary.dev</li>
+            <span class="hidden md:inline"> | </span>
+            <li>mary.haedrich@gmail.com</li>
+            <span class="hidden md:inline"> | </span>
+            <li>(631) 983-7978</li>
+        </ul>
 
-        <p class="text-xl">
+        <p class="hidden sm:block text-xl">
             <a href="/MaryHaedrich-Mar2022.pdf" target="_blank" class="underline">Download a PDF</a>
         </p>
     </div>

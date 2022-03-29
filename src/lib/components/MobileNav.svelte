@@ -96,7 +96,6 @@
 			<li
 				class="text-dark dark:text-light">
 				<div class="flex justify-center items-center gap-4 w-auto py-4 px-2"
-				on:click={() => setTimeout(() => isOpen = false, 200)}
 				in:fly="{{delay: 500, duration: 400, x: 400, y: 0, opacity: 0, easing: quintOut}}"
 				out:fly="{{delay: 200, duration: 400, x: 0, y: 500, opacity: 0, easing: quintOut}}">
 				<div class="text-xl">

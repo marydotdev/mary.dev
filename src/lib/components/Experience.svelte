@@ -11,7 +11,7 @@
             </div>
             <hr />
             <div>
-                <p class="text-lg sm:text-xl">Designed and developed reusable components using HTML, CSS, and Javascript. Prototyped responsive user experience journies. Wrote clear, efficient, maintainable code adhering to standard best practices.</p>
+                <p class="text-lg sm:text-xl">Designed and developed reusable components using HTML, CSS, and Javascript. Prototyped responsive user experience journeys. Wrote clear, efficient, maintainable code adhering to standard best practices.</p>
             </div>
         </div>
 
