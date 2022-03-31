@@ -29,11 +29,10 @@
   <Hero />
 
   <section id="profile" class="w-full h-full bg-gradient-to-br from-pink-300/50 via-red-200/10 to-rose-300/50 dark:from-pink-300/0 dark:to-rose-300/0 px-4">
-    <div class="max-w-6xl mx-auto py-12 md:py-36">
+    <div class="max-w-6xl mx-auto py-12 md:py-48">
       <div class="flex flex-col items-center md:flex-row gap-8">  
           <div class="">
               <div class="w-96">
-
                 <Swiper />
               </div>
           </div>
@@ -56,7 +55,7 @@
   </section>
 
   <section id="newsletter" class="w-full h-full bg-gradient-to-br from-cyan-300/50 via-teal-100/10 to-teal-300/50 dark:from-pink-300/0 dark:to-rose-300/0 px-4">
-    <div class="max-w-6xl mx-auto py-12 md:py-36">
+    <div class="max-w-6xl mx-auto py-12 md:py-48">
       <div class="flex flex-col-reverse items-center md:flex-row gap-8">  
         <div class="flex flex-col gap-8">
           <h3 class="text-2xl sm:text-3xl md:text-4xl leading-10 font-medium tracking-tighter">
@@ -75,7 +74,7 @@
   </section>
 
   <section id="content" class="w-full h-full bg-gradient-to-br from-indigo-300/50 via-purple-200/10 to-violet-300/50 dark:from-pink-300/0 dark:to-rose-300/0 px-4">
-    <div class="max-w-6xl mx-auto py-12 md:py-36">
+    <div class="max-w-6xl mx-auto py-12 md:py-48">
       <div class="flex flex-col justify-center items-center md:flex-row gap-8">  
           <div class="">
               <div class="">

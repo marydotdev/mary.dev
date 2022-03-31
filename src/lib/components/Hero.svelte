@@ -2,7 +2,7 @@
 import SocialLinks from "./SocialLinks.svelte";
 
 </script>
-<div class="max-w-6xl mx-auto px-4 pt-12 pb-12 md:pb-24">
+<div class="max-w-6xl mx-auto px-4 pt-12 pb-12 md:pt-24 md:pb-36">
     <div class="flex flex-col items-center gap-8 sm:gap-0 sm:flex-row sm:justify-between">
 
         <!-- Left Side -->
