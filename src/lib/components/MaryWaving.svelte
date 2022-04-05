@@ -1,5 +1,5 @@
 <div class="relative">
-    <svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="500"  viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="marywaving">
         <g id="body">
         <g id="skin">
