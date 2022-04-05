@@ -1,4 +1,5 @@
 <script>
+import MaryWaving from "./MaryWaving.svelte";
 import SocialLinks from "./SocialLinks.svelte";
 
 </script>
@@ -35,7 +36,7 @@ import SocialLinks from "./SocialLinks.svelte";
   
             <div class="shrink max-w-lg w-2/3 md:w-1/2 lg:w-1/3 flex justify-center">
                 <div class="">
-                    <img src="/img/drawing.png" alt="temp" class="aspect-square" />
+                    <MaryWaving />
                 </div>
             </div>
 
