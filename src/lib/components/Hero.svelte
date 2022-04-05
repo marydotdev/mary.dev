@@ -5,7 +5,6 @@ import SocialLinks from "./SocialLinks.svelte";
 </script>
 <div class="max-w-6xl mx-auto px-4 pt-12 pb-12 md:pt-24 md:pb-36">
     <div class="flex flex-col items-center gap-8 sm:gap-0 sm:flex-row sm:justify-between">
-
         <!-- Left Side -->
         <div class="max-w-2xl w-full mx-auto flex flex-col items-start justify-center">
             <h1 class="text-4xl sm:text-5xl lg:text-6xl leading-10 font-bold tracking-tighter">
@@ -14,7 +13,7 @@ import SocialLinks from "./SocialLinks.svelte";
                 <span>I design and develop websites, apps, and digital experiences.</span>
             </h1>
 
-            <div class="pt-8">
+            <div class="pt-8 ">
                 <SocialLinks />
             </div>
 
@@ -33,12 +32,10 @@ import SocialLinks from "./SocialLinks.svelte";
         </div>
 
         <!-- Right Side -->
-  
-            <div class="shrink max-w-lg w-2/3 md:w-1/2 lg:w-1/3 flex justify-center">
-                <div class="">
-                    <MaryWaving />
-                </div>
+        <div class="shrink max-w-lg md:w-1/2 lg:w-1/3 flex justify-center">
+            <div class="">
+                <MaryWaving />
             </div>
-
+        </div>
     </div>
 </div>
