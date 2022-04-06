@@ -3,7 +3,7 @@ import MaryWaving from "./MaryWaving.svelte";
 import SocialLinks from "./SocialLinks.svelte";
 
 </script>
-<div class="max-w-6xl mx-auto px-4 pt-12 pb-12 md:pt-24 md:pb-36">
+<div class="max-w-6xl mx-auto px-4 pt-4 pb-12 md:pt-24 md:pb-36">
     <div class="flex flex-col items-center gap-8 sm:gap-0 sm:flex-row sm:justify-between">
         <!-- Left Side -->
         <div class="max-w-2xl w-full mx-auto flex flex-col items-start justify-center">
@@ -13,7 +13,7 @@ import SocialLinks from "./SocialLinks.svelte";
                 <span>I design and develop websites, apps, and digital experiences.</span>
             </h1>
 
-            <div class="pt-8 w-full">
+            <div class="pt-8 w-full flex justify-center md:justify-start">
                 <SocialLinks />
             </div>
 
