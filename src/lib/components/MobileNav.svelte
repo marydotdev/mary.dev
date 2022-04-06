@@ -23,7 +23,7 @@
 	}
 </script>
 
-<div class="z-30 pr-2 md:hidden">
+<div class="z-30 md:hidden">
 	<button
 		aria-label="Toggle menu"
 		type="button"
@@ -38,7 +38,7 @@
 
 	{#if isOpen}
 
-	<div class="flex flex-col absolute left-0 px-4 w-full h-screen bg-light dark:bg-dark"
+	<div class="flex flex-col absolute left-0 mt-4 px-4 w-full h-screen bg-light dark:bg-dark"
 	in:fly="{{delay: 150, duration: 400, x: 0, y: 800, opacity: 100, easing: quintOut}}"
 	out:fly="{{delay: 450, duration: 500, x: 0, y: 800, opacity: 100, easing: quintOut}}">
 		<ul

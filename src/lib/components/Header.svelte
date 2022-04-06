@@ -6,8 +6,13 @@
 
 </script>
   
-
-<div class="w-full pb-2 mx-auto pt-4 flex justify-end md:justify-center items-center md:text-md lg:text-lg font-medium tracking-tight">
+<div class="w-full fixed top-0 left-0 z-10 bg-light dark:bg-dark">
+<div class="max-w-6xl px-4 mx-auto py-4 flex justify-between items-center md:text-md lg:text-lg font-medium tracking-tight">
+  <div>
+    <a href="/">
+    <img src="/maryicon.png" alt="marydotdev icon" class="w-16" />
+    </a>
+  </div>
   <div class="hidden md:flex justify-around items-center gap-8 p-4 rounded-lg bg-light/50 dark:bg-dark/30 backdrop-blur-lg">
     <a href="/" class="hidden relative group md:block rounded-md hover:transform hover:scale-110 transition ease-out duration-300">
       <div class="absolute -inset-1 bg-gradient-to-br from-pink-400 to-red-500 rounded-lg blur opacity-0 group-hover:opacity-80 transition duration-1000 group-hover:duration-200" />
@@ -38,11 +43,14 @@
         <p>Work</p>
       </div>
     </a>
+    
+    </div>
+
     <div class="hidden relative group md:block rounded-md hover:transform hover:scale-110 transition ease-out duration-300">
       <div class="absolute -inset-1 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
         <ThemeToggle />
-      </div>
     </div>
     
     <MobileNav />
   </div>
+</div>

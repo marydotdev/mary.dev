@@ -15,7 +15,7 @@
   </div>
     
 
-  <div class="grow">
+  <div class="grow mt-24">
     <slot />
   </div>
       

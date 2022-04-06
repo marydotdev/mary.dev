@@ -15,7 +15,7 @@
     <div class="py-8">
         <div class="text-lg sm:text-2xl lg:text-3xl font-medium tracking-tight">
           <h2>
-            A biweekly newsletter about web design and development, featuring a new project or experiment built by me!
+          A biweekly newsletter that explores modern web design and development. Each issue features an original project… designed, developed, and deployed by me! Subscribe to get a breakdown of my product development process delivered straight to your inbox every first and third Monday of the month. 
           </h2>
         </div>
     </div>
