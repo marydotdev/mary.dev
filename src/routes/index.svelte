@@ -67,7 +67,7 @@
 
           <div class="">
             <div class="w-64 lg:w-96">
-              <img src="/img/DDD-square.png" alt="Design, Develop, Deploy 🚀" class="aspect-square rounded-lg" />
+              <img src="/img/DDD-Square.png" alt="Design, Develop, Deploy 🚀" class="aspect-square rounded-lg" />
             </div>
         </div>
     </div>  
