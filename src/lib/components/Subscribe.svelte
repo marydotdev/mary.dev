@@ -1,10 +1,10 @@
 
-<div class="max-w-2xl mx-auto my-4 p-4 rounded-xl w-full bg-dark/5 dark:bg-light/5">
+<div class="max-w-2xl mx-auto my-4 p-4 rounded-xl w-full bg-light/70 dark:bg-light/5">
     <p class="text-xl sm:text-2xl font-semibold tracking-tight pb-2">
-      Consider Subscribing
+      Subscribe to my newsletter
     </p>
     <p class="pb-2">
-      Get my latest product experiments and case studies delivered straight to your inbox! Design, Develop, Deploy 🚀 is published every first and third Monday of the month. <a href="/newsletter" target="_blank" class="font-bold">Learn more &rarr;</a>
+      Get my latest product experiments and case studies delivered straight to your inbox! Design, Develop, Deploy 🚀 &nbsp; is published every first and third Monday of the month. <a href="/newsletter" target="_blank" class="font-bold">Learn more &rarr;</a>
     </p>
     <form
     action="https://buttondown.email/api/emails/embed-subscribe/marydotdev"

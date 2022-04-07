@@ -6,7 +6,7 @@
 
 </script>
   
-<div class="w-full fixed top-0 left-0 z-10 bg-light dark:bg-dark">
+<div class="w-full fixed top-0 left-0 z-30 bg-light dark:bg-dark">
 <div class="max-w-6xl px-4 mx-auto py-4 flex justify-between items-center md:text-md lg:text-lg font-medium tracking-tight">
   <div>
     <a href="/">

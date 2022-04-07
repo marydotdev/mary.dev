@@ -4,7 +4,7 @@ import SocialLinks from "./SocialLinks.svelte";
 
 </script>
 
-<div class="max-w-6xl mx-auto px-4 pt-4 pb-2 md:pt-24">
+<section class="max-w-6xl mx-auto px-4 pt-4 pb-2 md:pt-24">
     <div class="flex flex-col items-center gap-24 sm:gap-0 sm:flex-row sm:justify-between">
         <!-- Left Side -->
         <div class="max-w-2xl w-full mx-auto flex flex-col items-start justify-center">
@@ -40,7 +40,7 @@ import SocialLinks from "./SocialLinks.svelte";
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <div class="bg-pink-300/50 dark:hidden">
     <svg class="w-full text-light dark:text-dark"  viewBox="0 0 900 176" fill="none" xmlns="http://www.w3.org/2000/svg">
