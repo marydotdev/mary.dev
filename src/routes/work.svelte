@@ -12,6 +12,7 @@
 <script>
 import { name } from '$lib/info.js'
 import ProjectPreview from '$lib/components/ProjectPreview.svelte';
+import SmallStuff from '$lib/components/SmallStuff.svelte';
 
 export let recentProjects
 
@@ -21,9 +22,9 @@ export let recentProjects
   <title>{name} | Work</title>
 </svelte:head>
 
-<div class="w-full max-w-6xl mx-auto flex flex-col justify-center py-8 px-2">
-  <div class="max-w-6xl mx-auto px-4 py-12">
-        <div class="max-w-2xl flex flex-col items-start">
+<div class="max-w-6xl mx-auto px-4 pt-4 pb-2 md:pt-24">
+  <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+      <div class="max-w-xl flex flex-col items-start">
             <h1 class="text-4xl sm:text-5xl lg:text-6xl leading-10 font-bold tracking-tighter">
                 <span>Let's work together.</span>
                 <br />
@@ -44,8 +45,14 @@ export let recentProjects
             </a>    
         </div>
 
-    <section>
-        <div class="max-w-6xl mx-auto flex flex-col gap-12 px-4 py-24">
+        <div class="lg:min-w-fit">
+          <SmallStuff />
+        </div>
+
+      </div>
+
+    <section class="py-8">
+        <div class="max-w-6xl mx-auto flex flex-col gap-12 p-4">
           <div>
             <div class="py-8">
               <a class="hover:underline" href="/projects">
@@ -106,5 +113,5 @@ export let recentProjects
         </div>
     </div>
 </section>
-</div>
+
 </div>
