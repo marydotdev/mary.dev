@@ -4,8 +4,8 @@ import SocialLinks from "./SocialLinks.svelte";
 
 </script>
 
-<div class="max-w-6xl mx-auto px-4 pt-4 pb-24 md:pt-24 md:pb-36">
-    <div class="flex flex-col items-center gap-8 sm:gap-0 sm:flex-row sm:justify-between">
+<div class="max-w-6xl mx-auto px-4 pt-4 pb-2 md:pt-24">
+    <div class="flex flex-col items-center gap-24 sm:gap-0 sm:flex-row sm:justify-between">
         <!-- Left Side -->
         <div class="max-w-2xl w-full mx-auto flex flex-col items-start justify-center">
             <h1 class="text-center sm:text-left text-4xl sm:text-5xl lg:text-6xl leading-10 font-bold tracking-tighter">

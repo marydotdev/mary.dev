@@ -79,7 +79,7 @@
 
 <div class="w-full max-w-6xl mx-auto flex flex-col justify-center px-2">
   <div class="w-full flex flex-col items-center py-8 gap-8 md:gap-0 md:flex-row md:justify-between md:items-center">
-    <h1 class="text-4xl sm:text-5xl font-bold">Blog</h1>
+    <h1 class="text-5xl font-bold">Blog</h1>
 
     <div class="relative w-72 mx-auto sm:w-96 sm:mx-0">
       <input
@@ -102,7 +102,11 @@
           d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
         </svg>
     </div>
-  </div>        
+  </div>
+  
+  <div class="w-full flex flex-col items-center pb-8 md:flex-row md:justify-start md:items-center">
+    <p class="text-2xl">I write about UI/UX design, front end development, and whatever else I find interesting!</p>
+  </div>
   
 
       <!-- <div class="grid gap-4 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3"> -->

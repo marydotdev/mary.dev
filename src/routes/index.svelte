@@ -65,7 +65,7 @@
       <div class="flex flex-col-reverse items-center md:flex-row gap-8">  
         <div class="flex flex-col gap-8">
           <h3 class="text-2xl sm:text-3xl md:text-4xl leading-10 font-medium tracking-tighter">
-            <a class="font-black underline sm:no-underline sm:hover:underline" href="/newsletter" target="_blank">Design, Develop, Deploy 🚀</a> is a biweekly newsletter about web design and development. Each issue features an original project designed, developed, and deployed by me!
+            <a class="font-bold underline sm:no-underline sm:hover:underline" href="/newsletter" target="_blank">Design, Develop, Deploy 🚀</a> is a biweekly newsletter about web design and development. Each issue features an original project designed, developed, and deployed by me!
           </h3>
 
           <Subscribe />

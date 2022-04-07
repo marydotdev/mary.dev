@@ -4,7 +4,7 @@
       Consider Subscribing
     </p>
     <p class="pb-2">
-      Be the first to read about my latest product experiments! Design, Develop, Deploy 🚀 is published every first and third Monday of the month. <a href="/newsletter" target="_blank" class="font-bold">Learn more &rarr;</a>
+      Get my latest product experiments and case studies delivered straight to your inbox! Design, Develop, Deploy 🚀 is published every first and third Monday of the month. <a href="/newsletter" target="_blank" class="font-bold">Learn more &rarr;</a>
     </p>
     <form
     action="https://buttondown.email/api/emails/embed-subscribe/marydotdev"
