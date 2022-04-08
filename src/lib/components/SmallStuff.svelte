@@ -69,15 +69,12 @@
 </div>
 
 <style>
-    .circleText {
+.circleText {
 	position: relative;
 	transform-origin: 250px 250px;
 	animation: spin 60s linear infinite;
 }
 
-.circleText:hover {
-	animation-play-state: pause;
-}
 
 @keyframes spin { 
 	100% { transform: rotate(360deg); } 
