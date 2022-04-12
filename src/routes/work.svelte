@@ -23,7 +23,7 @@ export let recentProjects
 </svelte:head>
 
 <div class="max-w-6xl mx-auto px-4 pt-4 pb-2 md:pt-24">
-  <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+  <div class="flex flex-col items-center md:flex-row md:justify-between">
       <div class="max-w-xl flex flex-col items-start">
             <h1 class="text-4xl sm:text-5xl lg:text-6xl leading-10 font-bold tracking-tighter">
                 <span>Let's work together.</span>
@@ -45,16 +45,16 @@ export let recentProjects
             </a>    
         </div>
 
-        <div class="lg:min-w-fit">
+        <div class="">
           <SmallStuff />
         </div>
 
       </div>
 
-    <section class="py-8">
+    <section class="pt-0 md:py-8">
         <div class="max-w-6xl mx-auto flex flex-col gap-12 p-4">
           <div>
-            <div class="py-8">
+            <div class="pb-8">
               <a class="hover:underline" href="/projects">
               <h4 class="text-2xl sm:text-3xl md:text-4xl leading-10 font-medium tracking-tighter">Recent Projects</h4>
               </a>

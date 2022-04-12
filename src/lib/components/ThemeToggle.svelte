@@ -25,11 +25,20 @@
         }}
       >
           {#if prefersLight}
-          <Icon src={Sun} theme='outline' size="24" class="relative" />
-          <p>Light</p>
+          <span class="flex items-center gap-4">
+            <Icon src={Sun} theme='outline' size="24" class="relative" />
+            <p class="md:sr-only">Light</p>
+          </span>
           {:else}
-          <Icon src={Moon} theme='outline' size="24" class="relative" />
-          <p>Dark</p>
+          <span class="flex items-center gap-4">
+            <Icon src={Moon} theme='outline' size="24" class="relative" />
+            <p class="md:sr-only">Dark</p>
+          </span>
           {/if}
     </button>
   {/if}
+
+  <!-- <label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+  </label> -->

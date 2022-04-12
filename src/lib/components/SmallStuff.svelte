@@ -1,5 +1,5 @@
 <div class="circle">
-<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<defs>
 		<path id="circlePath" d="M 125, 250
         a 125,125 0 1,1 250,0
@@ -77,6 +77,6 @@
 
 
 @keyframes spin { 
-	100% { transform: rotate(360deg); } 
+	100% { transform: rotate(-360deg); } 
 }
 </style>
