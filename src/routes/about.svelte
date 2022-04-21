@@ -22,7 +22,7 @@
   <div class="px-6 py-4 text-xl md:text-2xl rounded-full bg-dark/10 dark:bg-light/10">
     <ul class="min-w-full text-xl md:text-2xl flex flex-row justify-start sm:justify-around gap-12 overflow-x-scroll hide-scrollbar cursor-grab touch-pan-x sm:cursor-auto">
       <li><a href="mailto:mary.haedrich@gmail.com" target="_blank" class="underline sm:hover:underline sm:no-underline">Email</a></li>
-      <li><a href="https://github.com/marydotdev" target="_blank" class="underline sm:hover:underline  m:no-underline">Github</a></li>
+      <li><a href="https://github.com/marydotdev" target="_blank" class="underline sm:hover:underline  sm:no-underline">Github</a></li>
       <li><a href="https://twitter.com/marydotdev" target="_blank" class="underline sm:hover:underline sm:no-underline">Twitter</a></li>
       <li><a href="https://dribbble.com/marydotdev" target="_blank" class="underline sm:hover:underlin  sm:no-underline">Dribbble</a></li>
       <li><a href="/resume" class="underline sm:hover:underline sm:no-underline">Resume</a></li>
