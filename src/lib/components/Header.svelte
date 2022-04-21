@@ -3,15 +3,16 @@
   import MobileNav from './MobileNav.svelte';
   import { Icon } from '@steeze-ui/svelte-icon';
   import {Home, User, Pencil, LightningBolt} from '@steeze-ui/heroicons'
+import CartoonMary from './CartoonMary.svelte';
 
 </script>
   
 <div class="w-full fixed top-0 left-0 z-30 bg-light/80 dark:bg-dark/80 backdrop-blur-xl">
 <div class="max-w-6xl px-4 mx-auto pt-4 pb-3 flex justify-between items-center md:text-md lg:text-lg font-medium tracking-tight">
   <div>
-    <!-- <a href="/">
-    <img src="/maryicon.png" alt="marydotdev icon" class="w-12" />
-    </a> -->
+    <a href="/">
+    <CartoonMary />
+    </a>
   </div>
   <div class="hidden md:flex justify-around items-center gap-8 px-4 rounded-lg">
     <a href="/" class="hidden relative group md:block rounded-md hover:transform hover:scale-110 transition ease-out duration-300">
