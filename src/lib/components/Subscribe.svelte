@@ -1,17 +1,17 @@
 
-<div class="max-w-2xl mx-auto my-4 p-4 rounded-xl w-full bg-light/70 dark:bg-light/5">
-    <p class="text-xl sm:text-2xl font-semibold tracking-tight pb-2">
+<div class="max-w-2xl mx-auto my-4 p-4 rounded-xl w-full bg-dark/5 dark:bg-light/5">
+    <p class="text-2xl font-semibold tracking-tight pb-2">
       Subscribe to my newsletter
     </p>
-    <p class="pb-2">
-      Get my latest product experiments and case studies delivered straight to your inbox! Design, Develop, Deploy 🚀 &nbsp; is published every first and third Monday of the month. <a href="/newsletter" target="_blank" class="font-bold">Learn more &rarr;</a>
+    <p class="pb-2 text-xl">
+      Get my latest launch delivered straight to your inbox, published every first and third Monday of the month. 
     </p>
     <form
     action="https://buttondown.email/api/emails/embed-subscribe/marydotdev"
     method="post"
     target="popupwindow"
     onsubmit="window.open('https://buttondown.email/marydotdev', 'popupwindow')"
-    class="relative my-2 w-full md:w-3/4 mx-auto"
+    class="relative my-2 w-full"
     >
         <!-- <label for="bd-email">Enter your email</label> -->
         <input type="email" name="email" id="bd-email" placeholder="email@address.com"
@@ -24,4 +24,4 @@
             <a href="https://buttondown.email" target="_blank" class="hover:underline">Powered by Buttondown.</a>
         </p>
     </form>
-</div>
+  </div>
