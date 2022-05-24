@@ -8,18 +8,15 @@
 </script>
 
 
-<div class="min-h-screen flex flex-col overflow-x-hidden">   
-  
+<div class="min-h-screen flex flex-col overflow-x-hidden">
   <div>
     <Header />
   </div>
     
-
-  <div class="grow mt-24">
+  <div class="grow mt-20 sm:mt-24 md:mt-28">
     <slot />
   </div>
       
   <Footer />
-
 </div>
 

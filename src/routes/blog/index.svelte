@@ -104,9 +104,10 @@
     </div>
   </div>
   
-  <div class="w-full flex flex-col items-center pb-8 md:flex-row md:justify-start md:items-center">
-    <p class="text-2xl">I write about UI/UX design, front end development, and whatever else I find interesting!</p>
-  </div>
+  <!-- <div class="w-full flex flex-col items-center pb-8 md:flex-row md:justify-start md:items-center">
+    <p class="text-2xl">I write about UI/UX design, front end development, and whatever else I find interesting (so really anything)
+    </p>
+  </div> -->
   
 
       <!-- <div class="grid gap-4 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3"> -->

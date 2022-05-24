@@ -37,6 +37,7 @@
   import PostPreview from '$lib/components/PostPreview.svelte'
   import ToC from '$lib/components/ToC.svelte'
 import Subscribe from '$lib/components/Subscribe.svelte'
+import Giscus from '@giscus/svelte'
 
 
   export let component
@@ -141,5 +142,21 @@ import Subscribe from '$lib/components/Subscribe.svelte'
       {/if}
     </div>
   {/if}
+  </div>
+
+  <div class="max-w-2xl mx-auto pt-12">
+    <Giscus
+        repo="marydotdev/mary.dev"
+        repoId="R_kgDOGsTulg"
+        category="Announcements"
+        categoryId="DIC_kwDOGsTuls4COx30"
+        mapping="pathname"
+        term="Welcome to @giscus/svelte component!"
+        reactionsEnabled="1"
+        emitMetadata="0"
+        inputPosition="top"
+        theme="preferred_color_scheme"
+        lang="en"
+        />
   </div>
 </div>

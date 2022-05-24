@@ -1,5 +1,5 @@
 
-<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="400"  viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g id="Design, Develop, Deploy">
   <rect id="mary" x="75" y="103" width="250" height="250" fill="url(#pattern0)"/>
   <rect id="deploy" x="290" y="110" width="80" height="80" fill="url(#pattern1)"/>

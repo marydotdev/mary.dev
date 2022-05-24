@@ -10,7 +10,7 @@
     <div class="flex-1 bg-dark/5 dark:bg-light/5 p-6 flex flex-col justify-between">
       <div class="flex-1">
         <a href={`/blog/${post.slug}`} class="block mt-2">
-          <p class="text-xl font-semibold">{post.title}</p>
+          <p class="text-xl font-semibold line-clamp-1">{post.title}</p>
           <p class="mt-3 line-clamp-2">{@html post.preview.html}</p>
         </a>
       </div>

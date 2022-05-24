@@ -4,8 +4,13 @@ import SocialLinks from "./SocialLinks.svelte";
 
 </script>
 
-<section class="max-w-6xl mx-auto px-4 pt-4 md:pt-24">
-    <div class="flex flex-col items-center gap-24 sm:gap-0 sm:flex-row sm:justify-between">
+<section class="relative max-w-6xl mx-auto pt-8 sm:pt-2 bg-gradient-to-r
+from-blue-100
+to-sky-100
+dark:from-indigo-800/10
+dark:to-blue-900/10
+background-animate">
+    <div class="flex flex-col items-center pt-8 sm:pt-2 gap-6 sm:gap-0 sm:flex-row sm:justify-between">
         <!-- Left Side -->
         <div class="max-w-2xl w-full mx-auto flex flex-col items-start justify-center">
             <h1 class="text-center sm:text-left text-4xl sm:text-5xl lg:text-6xl leading-10 font-bold tracking-tighter">
@@ -14,31 +19,35 @@ import SocialLinks from "./SocialLinks.svelte";
                 <span>I design and develop websites, apps, and digital experiences.</span>
             </h1>
 
-            <div class="pt-8 w-full flex justify-center md:justify-start">
+            <div class="pt-8 w-full flex justify-center sm:justify-start">
                 <SocialLinks />
             </div>
-
-            <div class="w-full flex justify-center md:justify-start">
-                <a href="mailto:mary.haedrich@gmail.com" target="_blank">
-                    <div class="relative w-fit group">
-                        <div class="absolute -inset-1 bg-gradient-to-r from-green-400 to-green-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse group-hover:animate-none" />
-                        <div class="relative mt-8 md:mt-12 p-4 flex items-center gap-3 rounded-lg bg-light dark:bg-dark">
-                            <div class="rounded-full w-4 h-4 bg-green-400 border-2 border-green-600" />
-                            <p class="tracking-tight text-xl md:text-2xl font-medium">
-                                Currently available
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>   
         </div>
 
         <!-- Right Side -->
-        <div class="shrink w-1/2 md:w-1/2 lg:w-1/3 flex justify-center">
+        <div class="w-1/2 lg:w-1/3 sm:pt-36">
             <MaryWaving />
         </div>
     </div>
 </section>
 
 
-    
+<style>
+    .background-animate {
+    background-size: 400%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+  }
+
+  @keyframes AnimationName {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+</style>
